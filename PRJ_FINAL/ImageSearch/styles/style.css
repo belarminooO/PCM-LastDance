@@ -1,0 +1,29 @@
+#canvas {
+    border: 1px solid black;
+}
+
+#dominant-colors,
+#histogram-colors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.dominant-color,
+.histogram-color {
+    flex: 1 0 32px;
+    height: 32px;
+    border: 1px solid black;
+}
+
+.dominant-color:hover,
+.histogram-color:hover {
+    cursor: pointer;
+    filter: brightness(150%);
+    transition: filter 0.5s linear;
+}
+
+#context-tools {
+    display: none;
+}
